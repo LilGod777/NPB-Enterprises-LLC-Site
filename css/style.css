@@ -181,6 +181,16 @@ section.home {
     height: 110%;
 }
 
+.home-link {
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    transition: 0.7s;
+}
+
+.home-link:hover {
+    color: var(--primary-color);
+}
+
 
 /* Services Page */
 
