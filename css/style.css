@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap');
 :root {
-    --primary-color: #f60f20
+    --primary-color: #f60f20;
+    --secondary-color: rgb(202, 191, 191)
 }
 
 
@@ -287,6 +288,137 @@ section.home {
     }
     .services {
         grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+
+/* Contact */
+
+.contact {
+    position: relative;
+    width: 100%;
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.contact-form {
+    position: relative;
+    background: #f9f9f9;
+    width: calc(100% - 350px);
+    padding: 60px 40px 20px;
+}
+
+.contact-form form {
+    width: 100%;
+}
+
+.contact-form .row {
+    width: 100%;
+    display: flex;
+}
+
+.contact-form .input50 {
+    width: 50%;
+    margin: 0 10px;
+}
+
+.contact-form .input100 {
+    width: 100%;
+    margin: 0 10px;
+}
+
+.contact-form .row input,
+.contact-form .row textarea {
+    position: relative;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    color: #111;
+    background: transparent;
+    width: 100%;
+    padding: 10px;
+    outline: none;
+    font-size: 16px;
+    font-weight: 300;
+    margin: 10px 0;
+    resize: none;
+}
+
+.contact-form .row textarea {
+    height: 150px;
+}
+
+.contact-form .row input[type='submit'] {
+    background-color: rgb(202, 191, 191);
+    margin: 0;
+    letter-spacing: 2px;
+    font-weight: 600;
+    border: 0;
+    cursor: pointer;
+}
+
+.contact-info {
+    width: 350px;
+    /* background: #f9f9f9; */
+    padding: 60px 40px 20px;
+}
+
+.contact-info .info-box {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 40px;
+}
+
+.contact-info .info-box .contact-icon {
+    width: 20px;
+    margin-right: 40px;
+}
+
+.contact-info .info-box .details h4 {
+    color: #111;
+}
+
+.contact-info .info-box .details p {
+    color: #111;
+}
+
+@media (max-width: 1068px) {
+    .home-img {
+        display: none;
+    }
+    .logo {
+        top: 10px;
+        left: 40px;
+        font-size: 1.5rem;
+    }
+    section {
+        padding: 100px 40px;
+    }
+    .navigation ul li a {
+        font-size: 2rem;
+    }
+    .services {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .contact {
+        flex-direction: column;
+    }
+    .contact-form {
+        width: 100%;
+        padding: 30px 30px 20px;
+    }
+    .contact-form .row {
+        flex-direction: column;
+    }
+    .contact-form .input50,
+    .contact-form .input100 {
+        width: 100%;
+        margin: 0;
+    }
+    .contact-info {
+        width: 100%;
+        margin-top: 20px;
+        padding: 30px 30px 20px;
     }
 }
 
